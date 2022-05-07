@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/estrella.png" type="image/x-icon">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Aún no esta registrado</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contacto.html">Contact</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+      <main>
+        <form action="" class="formulario" id="formulario">
+          <form id="frm-register" action="">
+            <img id="img-form"src="images/foto2.jpg">
+
+          <!-- grupo: FullName -->
+          <div class="formulario__grupo" id="grupo__fullname">
+            <label for="fullname" class="formulario__label"></label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="fullname" id="fullname" placeholder="fullname">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error"> solo se permiten minimo 3 caracteres</p>
+          </div>
+
+          <!-- grupo: username -->
+          <div class="formulario__grupo" id="grupo__username">
+            <label for="username" class="formulario__label"></label>
+            <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="username" id="username" placeholder="username">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error"></p>
+          </div>
+
+          <!-- grupo: contraseña-->
+          <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label"></label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password" id="password" placeholder="Insert your password">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">contraseña invalida</p>
+          </div>
+
+
+          <!-- grupo: confirmar contraseña-->
+          <div class="formulario__grupo" id="grupo__password2">
+            <label for="password2" class="formulario__label"></label>
+            <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password2" id="password2" placeholder="confirm your password">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+            </div>
+            <p class="formulario__input-error">ambas contraseñas deben de ser iguales</p>
+          </div>
+
+          <!-- mensaje de confirmacion de contraseña -->
+          <div id="mensaje"></div>
+          <div id="error" class="alert alert-danger ocultar" role="alert">
+            las contraseñas no coinciden, vuelve a intentar!
+          </div>
+          <div id="ok" class="alert alert-seccess ocultar" role="alert">
+            las contraseñas coinciden!
+          </div>
+
+          <!-- button -->
+          <div class="formulario__grupo formulario__mensaje">
+            <button type="submit" class="formulario__btn-enviar">Register</button>
+            <div class="btn2">
+             <a href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
+            </div>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"></p>     
+        </div>
+
+        </form>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/945e754677.js" crossorigin="anonymous"></script>
+</body>
+</html>
